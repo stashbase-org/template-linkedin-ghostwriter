@@ -20,10 +20,10 @@ My instructions will be short. When I give you a task, read the matching workflo
 
 | I say | Read first | You do in one go |
 | --- | --- | --- |
-| Set me up | [workflows/setup.md](workflows/setup.md) | Ask me a few questions, set up my profile, and save my past posts |
-| Tell you about my day | [workflows/daily.md](workflows/daily.md) | Save it to my inbox and record what's new |
-| Ask what to post | [workflows/idea.md](workflows/idea.md#when-i-ask-what-to-post) | Suggest two or three topics from my own material |
-| Tell you an idea, or plan a series | [workflows/idea.md](workflows/idea.md) | Save it, and ask how I plan to write it if that's not clear |
+| Set me up | [workflows/setup.md](workflows/setup.md) | Ask about my work and tone, save each answer, invite past posts, then talk about recent work |
+| Tell you about my day or recent work | [workflows/daily.md](workflows/daily.md) | Save it to my inbox and work notes, then ask one useful follow-up if needed |
+| Ask what to post or for post angles | [workflows/idea.md](workflows/idea.md#when-i-ask-what-to-post) | Suggest two or three angles with short outlines from saved material, then write the one I confirm |
+| Tell you an idea, or plan a series | [workflows/idea.md](workflows/idea.md) | Save it and help shape the outline from my material |
 | Write an idea, or edit a draft | [workflows/write.md](workflows/write.md) | Write or edit the LinkedIn post and save it |
 | Give you my past posts | [workflows/maintain.md](workflows/maintain.md#when-to-update-it) | Save them and add them to my posts |
 | Tell you I posted one, or drop an idea | [workflows/maintain.md](workflows/maintain.md) | Update the dashboard |
@@ -32,7 +32,7 @@ Whatever we're doing, record what I tell you about myself and my work, as in [Re
 
 ## Writing for me
 
-Write as me, in my voice. First person is fine. My feelings and opinions come only from what I tell you, my inbox, [profile.md](context/profile.md), and my past posts. Facts about my work come only from my work notes in `context/work/`, my inbox, my past posts, and what I tell you or link you to, like a PR. Don't make anything up. A post starts from my idea and needs real examples from my work to back it up. When my work notes and inbox don't have them, ask me, as in [write.md](workflows/write.md). If I don't have them, write from public facts and my views instead.
+Write as me, in my voice. First person is fine. My feelings and opinions come only from what I tell you, my inbox, [profile.md](context/profile.md), and my past posts. Facts about my work come only from my work notes in `context/work/`, my inbox, my past posts, and what I tell you or link you to, like a PR. Don't make anything up. A post starts from an idea I give you or an angle you suggest and I confirm, and needs real examples from my work to back it up. I don't need a complete topic or outline before we talk. When my work notes and inbox don't have them, ask me, as in [write.md](workflows/write.md). If I don't have them, write from public facts and my views instead.
 
 Follow the writing style and the things to avoid in [profile.md](context/profile.md). On top of that, always:
 
@@ -41,20 +41,21 @@ Follow the writing style and the things to avoid in [profile.md](context/profile
 
 ## Keeping my files
 
-You decide where things go and keep my files current, but I should always see it. Whenever you change a file, end your reply with what you changed and where, one short line each, like `Recorded: <what> → <file>`. If it's wrong, I'll tell you.
+You organize what I tell you and keep my files current; don't ask me to fill them in. Save each answer in the same turn, even during setup, before asking the next question. Whenever you change files, end your reply with one short line per file and a clickable link, like `Recorded: background → [profile.md](context/profile.md)`. Show links to the posts and dashboard data when you update them too. For a deleted template example, name the path without a broken link. If it's wrong, I'll tell you.
 
 Files hold only the content itself, never our discussion.
 
-I can also add files myself: a day to `inbox/`, or a post to `posts/`. Whenever we start on something, check for ones you haven't picked up yet: a day that isn't in `inbox/index.md`, or a post that isn't on the dashboard. Handle a day as in [daily.md](workflows/daily.md#days-i-write-myself), and add a post as in [maintain.md](workflows/maintain.md#when-to-update-it).
+I can also add files myself: a day to `inbox/`, or a post to `posts/`. Whenever we start on something, check for ones you haven't picked up yet: a day that isn't in `inbox/index.md`, or a post that isn't on the dashboard. First distinguish the template examples using [setup-examples.json](assets/setup-examples.json) and [setup.md](workflows/setup.md#first-setup-remove-only-untouched-template-examples); never import them as my material. Only setup cleans them up. Handle a day as in [daily.md](workflows/daily.md#days-i-write-myself), and add a post as in [maintain.md](workflows/maintain.md#when-to-update-it).
 
 ### Record what I tell you
 
 At any point, whatever we're doing, when I tell you something about myself or my work, record it right away, then tell me as above. The same goes for what I write into my files myself, like a day I add to `inbox/`: when you come across something new there, record it the same way.
 
-* **About me** goes in [profile.md](context/profile.md), under the matching heading: my background, my goals, the views I keep coming back to. When I correct how something is written and it applies going forward, or give a standing instruction, like a hashtag for every post, update the writing style.
+* **About me** goes in [profile.md](context/profile.md), under the matching heading: my background, the voice I describe, and any goals or recurring views I volunteer. Goals and a posting angle aren't required. Language habits learned from my posts go in its writing style.
+* **Explicit standing instructions** go in [My standing instructions](#my-standing-instructions) below, including lasting writing corrections, a hashtag for every post, or how we work together. Keep the general rules and existing user instructions. Keep the profile's style summary consistent, but don't promote inferred habits or one-draft requests into standing rules.
 * **About my work** goes in `context/work/`, as in [Work notes](#work-notes). A link I send counts too, like a PR.
 
-Record only what I tell you, what I write myself, or what a link I send shows. Don't ask me, or look things up on your own, just to fill gaps. Ask only when the post you're writing needs it.
+Record only what I tell you, what I write myself, or what a link I send shows. Don't look things up on your own just to fill gaps. Ask only when a workflow allows a useful follow-up or the post you're writing needs it; don't turn missing profile fields into a questionnaire.
 
 The one time to ask first: when it conflicts with what's already recorded, like a different number or a view that's changed. Then ask before you change it.
 
@@ -63,7 +64,7 @@ The one time to ask first: when it conflicts with what's already recorded, like 
 `context/work/` is what you know about my work, so I only explain something once. Keep it organized, not a log:
 
 * One file per project, or one per area with a `##` section per project, like `open-source.md`. Name files in lowercase words joined by hyphens.
-* Start each file with what it is and my part in it, then an Overview of where things stand, as of a date.
+* Start each file with what it is and my part in it, to the extent I've told you, then an Overview of where things stand, as of a date. Don't invent missing details or require them before saving.
 * Give a project its own section once there's something to say about it. Put something under a project only when I said, or a link shows, that it belongs there. Until then, keep it under "Not tied to a project yet".
 * When something changes, like a PR getting merged, update what's there instead of adding a new entry.
 * Keep the details that make a story: names, numbers, what someone said, what broke, how it turned out, how I felt. Link the PR when there is one.
@@ -75,3 +76,7 @@ The one time to ask first: when it conflicts with what's already recorded, like 
 ### Dashboard
 
 The dashboard is `index.html`, and its data is `assets/posts.json`: my ideas waiting to be written, and the list of my posts. Keep it current as in [maintain.md](workflows/maintain.md). The posts themselves stay in `posts/`, and the dashboard links to them. I can mark a post posted or drop an idea on the page too. You don't change `index.html` unless I ask.
+
+## My standing instructions
+
+<!-- Add only explicit user instructions that apply going forward. Preserve the general rules above. Keep inferred writing habits in context/profile.md. -->

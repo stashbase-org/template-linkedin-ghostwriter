@@ -1,24 +1,30 @@
-# I Have an Idea
+# Find an Angle
 
-An idea is something I want to say about my work: a feeling, a view, something that surprised me. It usually comes before the examples.
+An idea can be something I want to say about my work: a feeling, a view, something that surprised me. It can also come from talking through recent work. I don't need a complete topic or writing plan.
 
-When I tell you one, in one go:
+## When I give you an idea
+
+In one go:
 
 * Add it to the top of my ideas on the dashboard, as in [maintain.md](maintain.md#format): today's date and the idea close to my words. If it builds on an idea already there, update that one instead.
-* Tell me in a sentence whether my work notes or inbox have an example for it yet.
-* If it isn't clear how I'd tell it, end with one question: how do I plan to write it? For example, which moment I'd start from, or which example I have in mind. Skip it if I already said, or my work notes or inbox make it clear.
+* Record any new background, standing instructions, or work facts as in [AGENTS.md](../AGENTS.md#record-what-i-tell-you). If I'm describing recent work, also follow [daily.md](daily.md).
+* Look for examples in my work notes and inbox. Say briefly what supports the idea and suggest a short outline if I haven't given one. Don't ask me to decide how to write it; shaping it is your job.
+* Keep your suggested outline in the reply until I confirm it. Save a plan I've supplied or approved in the idea's `plan`. If one missing fact would help, ask one concrete question, such as what prompted the change, rather than asking for a full plan.
 
-When I answer, add it to the idea as its `plan`, in a few words. If I want to write it now, go to [write.md](write.md).
+If I ask you to write it, or confirm a proposed angle in response to your invitation to write, follow [write.md](write.md) and save the draft. If I only want to collect ideas or plan a series, save the confirmed plan without writing posts yet.
 
-If I plan it as a series, write the plan into the idea: how many posts, what each covers, and which are already written.
+For a series, propose how many posts and what each covers from the material available. Once confirmed, put that plan into the idea, including which posts are already written. I don't have to design the series myself.
 
 ## When I ask what to post
 
-When I don't have an idea and ask what to post, like "What should I post?":
+When I ask "What should I post?", "What post angles do you see?", or something similar:
 
-* Read my inbox in `inbox/` (the last few weeks is plenty), my work notes in `context/work/`, my ideas on the dashboard, the posting angle in [profile.md](../context/profile.md), and my recent posts in `posts/`.
-* Suggest two or three topics, only from what's there. Don't bring in general topics that aren't about my work. For each, a sentence on how I could tell it and where it comes from, like a day in my inbox or a project in my work notes. An idea already waiting on the dashboard can be one of them.
-* Don't repeat what my recent posts already said. Building on one is fine.
-* If there's nothing to go on, ask in one question what I've been working on lately.
+* Read my inbox in `inbox/` (the last few weeks is plenty), work notes in `context/work/`, ideas on the dashboard, [profile.md](../context/profile.md), and recent posts in `posts/`. Use any goals or recurring views I've shared, but don't require a posting angle in the profile.
+* Suggest two or three distinct angles supported by my material. For each, give the point of the post, a short outline of two or three beats, and clickable links to the notes or posts it comes from. A useful outline might be what prompted a feature, the choice I made, and what happened; include only details we actually have.
+* Keep suggestions separate from my confirmed opinions. Don't invent feelings, outcomes, metrics, or broad lessons. If there's only enough material for one angle, offer one.
+* Don't repeat what recent posts already said. Building on one is fine. An idea already on the dashboard can be an option.
+* Ask which angle I'd like you to write. This is the confirmation before drafting; don't require another approval of the same choice or ask me to supply an outline.
 
-Add the one I pick to my ideas, as above. If I want to write it now, go to [write.md](write.md).
+When I choose an angle, save or update the idea and its confirmed outline in `assets/posts.json`, then follow [write.md](write.md) to write and save it in `posts/` in the same turn, unless I say to keep it as an idea for now. If the post needs a missing fact, ask as described there and save my answer before drafting. Don't save unchosen suggestions as my ideas.
+
+If there's nothing to go on, ask one question about what I've been working on lately, then follow [daily.md](daily.md). Don't ask me to arrive with a topic or fill in a document.

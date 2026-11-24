@@ -3,15 +3,15 @@
 ## Before writing
 
 * Read [profile.md](../context/profile.md).
-* Start from my idea: the one I just gave you, or the one from my ideas on the dashboard I want to write. That's the point of the post. If it has a plan, follow it.
+* Start from the idea I asked you to write, an idea on the dashboard I chose, or an angle and short outline you suggested and I confirmed. That's the point of the post. Follow its plan if it has one. If I asked only for angles, use [idea.md](idea.md#when-i-ask-what-to-post) and wait for my choice before drafting; once I choose in response to an invitation to write, don't ask for the same approval again.
 * If it's part of a series, read the plan and the posts already written in it. Cover only this post's part, don't repeat what earlier posts said, and point back to them where it helps.
 * Find examples that back it up in `context/work/` and my inbox in `inbox/`. Use their details. That's what really happened.
 * Read related past posts in `posts/`. Learn the word choice, sentence length, openings, and formatting. Check what I've said before so I don't contradict myself, and build on it where you can.
-* If the examples are thin or missing, ask me for what the post needs, all in one message: specific details, like which PR, what broke, a number, or what a maintainer said. If I send a link, like a PR, read it. If I don't have something, write without it.
+* If the examples are thin or missing, ask me for what the post needs, all in one message: specific details, like which PR, what broke, a number, or what a maintainer said. If I send a link, like a PR, read it. Save my answer immediately to the appropriate profile, instruction, or work-note file as in [AGENTS.md](../AGENTS.md#record-what-i-tell-you), and to the inbox if it describes recent work. If I don't have something, write without it; never invent the example or outcome.
 
 ## Writing
 
-Write the draft directly. No outline needed unless I ask. Give me one version first, and alternatives only when I ask.
+For a direct writing request, write the draft without requiring a separate outline. When coming from the angle workflow, use the short outline already confirmed. Give me one version first, and alternatives only when I ask.
 
 Follow the writing style in [profile.md](../context/profile.md) and the rules in [AGENTS.md](../AGENTS.md#writing-for-me). For LinkedIn:
 
@@ -21,12 +21,12 @@ Follow the writing style in [profile.md](../context/profile.md) and the rules in
 * Use a list only when there really are steps or parallel points.
 * Skip LinkedIn clichés: "I'm thrilled to announce", "Here's the thing", "Let that sink in", "Agree?", humblebrags, and big life lessons drawn from small moments.
 * End where the story ends. Ask readers a question only when I'd really want their answers.
-* No hashtags unless my writing style asks for them.
+* No hashtags unless my standing instructions or writing style asks for them.
 * If the post needs a link, put it in the first comment.
 
 ## Saving
 
-Save it as its own file in `posts/` as soon as it's written, without asking. Name it `YYYY-MM-DD-<slug>.md`: today's date, then a few words of the title in lowercase, joined by hyphens, like `2026-11-04-first-month-sending-prs.md`.
+Save it as its own file in `posts/` as soon as it's written, without asking. Name it `YYYY-MM-DD-<slug>.md`: today's date, then a few words of the title in lowercase, joined by hyphens, like `2026-11-04-first-month-sending-prs.md`. Use a distinct slug if a different post already has that name. For past posts, use [maintain.md](maintain.md#past-posts) instead.
 
 ```markdown
 # Title
@@ -38,4 +38,4 @@ Post text
 
 Then add it to the dashboard as a draft, as in [maintain.md](maintain.md#format): its title and file name. Then, in your reply, suggest removing the idea it came from, and remove it if I agree. For a series, mark the post as written in the plan instead, and suggest removing the idea once the last post is written.
 
-When editing, save changes in the post's file.
+When editing, save changes in the post's file. End the reply with clickable links to every changed file, including the post and dashboard data, as in [AGENTS.md](../AGENTS.md#keeping-my-files). If you also show the post for copying, put only the copy-ready text in a fenced `text` block.

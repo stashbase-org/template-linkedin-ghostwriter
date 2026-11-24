@@ -1,54 +1,58 @@
 # LinkedIn Ghostwriter
 
-Good LinkedIn posts usually come from your own work: something you built, a mistake you learned from, a call you made. Often it starts with a feeling about your work, and the examples that back it up are buried in the work itself.
+Good LinkedIn posts usually come from your own work: something you built, a mistake you learned from, a call you made. You don't need a complete topic to start.
 
-This project has AI help with all of it. Tell it an idea when one strikes you. When you want to post it, it finds examples in your work notes, asks you for what's missing, and writes the LinkedIn post in your voice. Whatever you tell it about yourself and your work, at any point, is kept, so you only explain something once. Each time it saves something, it tells you what and where, so you can correct it.
+Tell the Agent what you've been working on, in your own words. It organizes the material, helps you find an angle when you're ready, and writes in your voice. Each answer is saved as you go, with links so you can open what changed and correct it.
 
 ## Getting started
 
 Open this project in StashBase and tell the Agent:
 
-1. **"Set me up."** It asks you three quick questions, one at a time: who you are and what you work on, what you want to post about, and a few of your past LinkedIn posts so it can match your style. Then it sets up your profile and saves your past posts, and asks for your first idea.
-2. **"I have an idea: …"** Whenever something about your work strikes you, a sentence is enough, like "I have an idea: working code is only the starting bar in someone else's repo." It saves it to your ideas on the dashboard, and if it isn't clear how you'd tell it, asks how you plan to write it. No idea yet? Ask **"What should I post?"** and it suggests two or three from your inbox and work notes, saying where each comes from.
-3. **"Write about …"** Name the idea, like "Write about small PRs." It looks for examples in your work notes and inbox, and asks you for what's missing, like which PR or what broke. What you add is saved to `context/work/`, so you won't have to explain it again. Then it writes the LinkedIn post and saves it to `posts/`, one file per post. Ask for any edits you want, like "Make the opening more casual."
+1. **"Set me up."** It first asks what you're working on, then how you'd like your posts to sound, one question at a time. Each answer is saved immediately: background and voice in [your profile](context/profile.md), explicit ongoing instructions in [AGENTS.md](AGENTS.md#my-standing-instructions), and project details in your work notes. You don't need to choose posting goals, content directions, or a first topic.
+2. **Share 3–5 past posts, or skip.** After saving those answers, it invites posts that sound most like you. Fewer is fine too. Each goes in `posts/` and onto the dashboard as posted. The Agent learns your language and writing habits from them and updates your profile, with links to the saved files.
+3. **Talk about recent work.** Setup ends with "What have you been working on lately, or what's been on your mind?" A few sentences or a messy brain dump is enough. If you say you added a feature, it saves that first and may ask why you built it. It saves the answer too, keeping the day's account in `inbox/` and current project facts in `context/work/`. You don't have to fill in files yourself.
+4. **"What post angles do you see?"** When you're ready, it suggests two or three angles from your saved material, each with a short outline and links to the source notes. Choose one and it writes the post, saves it to `posts/`, and adds it to the dashboard as a draft. It asks for specific missing facts only when the post needs them. You can then ask for edits, like "Make the opening more casual."
 
-Some days you just want to write down what happened. Say **"Today I …"** and tell it, a few sentences or a messy brain dump. It keeps the day in your inbox and records anything new about your work, so it's there the next time you write. You can also write a day yourself, as a new file in `inbox/`; the Agent adds it to the list and picks up what's new.
+You can jump in anywhere. **"Today I …"** saves a day. **"I have an idea: …"** saves an idea and helps shape it; a sentence is enough. **"Write about …"** starts a draft from the idea you name. You can also add a day directly to `inbox/`; the Agent indexes it and picks up what's new.
 
-Open the dashboard, `index.html`, to see what's next: ideas waiting to be written, drafts waiting to go out, and what you've posted.
+Open the [dashboard](index.html) to see ideas waiting to be written, drafts waiting to go out, and what you've posted.
 
-The template comes with an example: a software developer a month into contributing to open source, with notes on that work, a few ideas including a series, a few drafts, some past posts, and a few days in the inbox. Setup replaces it with yours.
+The template comes with an example: a software developer a month into contributing to open source, with work notes, ideas, drafts, past posts, and a few inbox days. First setup removes only verified, untouched template examples using [the example reference](assets/setup-examples.json). It preserves your added or edited material and dashboard records. Running setup again keeps your existing files and only updates what your answers change.
 
 ## The dashboard
 
 Everything works in Chat, and you never have to open anything else. The dashboard shows where each post is at, kept current by the Agent.
 
-* **Ideas:** your ideas waiting to be written. Just tell the Agent one. Click one to see it from the side, with how you plan to tell it. To drop one, use the trash can that shows when you hover over it. A series, like an intro, three examples, and a wrap-up, stays here with its plan until the last post is written.
+* **Ideas:** ideas waiting to be written. Tell the Agent one, or choose an angle it suggests. Click one to see its outline. To drop one, use the trash can that shows when you hover over it. A series, like an intro, three examples, and a wrap-up, stays here with its plan until the last post is written.
 * **Drafts:** posts written but not out yet. Click one to open it.
 * **Posted:** what's out, newest first, past posts included. Tick a draft's circle once you've posted it, or just tell the Agent.
 
-Switch to **All posts** to see every post in one table, with its status and the day it was written. **📬 Inbox** opens `inbox/index.md`, a list of every day you've told it about, newest first; click a day to open it.
+Switch to **All posts** to see every post in one table, with its status and the day it was written. **📬 Inbox** opens [inbox/index.md](inbox/index.md), a list of every day you've told it about, newest first; click a day to open it.
 
 ## Make it yours
 
 You can change things anytime:
 
-* **Your background and writing style** are in `context/profile.md`. Edit it, or just tell the Agent. When you correct how something is written, it remembers.
-* **Your work notes** are in `context/work/`, organized by project, like `open-source.md`. You can edit them yourself too.
-* **Your posts** are in `posts/`, one file per post, named like `2026-11-04-first-month-sending-prs.md`. Past posts can go there too, or just paste them to the Agent. 10–20 that best show your style is enough.
-* **The Agent's persona and rules,** including how it keeps your profile and work notes, are in `AGENTS.md`. How it keeps the dashboard is in `workflows/maintain.md`.
+* **Your background and writing style** are in [context/profile.md](context/profile.md). Tell the Agent about changes or edit it yourself. Habits learned from past posts go here; goals and a posting angle are optional.
+* **Your standing instructions** are in [AGENTS.md](AGENTS.md#my-standing-instructions), alongside the general rules. Tell the Agent a preference that should apply going forward and it saves it there.
+* **Your work notes** are in `context/work/`, organized by project, like `open-source.md`. The Agent keeps them current as you talk.
+* **Your posts** are in `posts/`, one file per post, named like `2026-11-04-first-month-sending-prs.md`. Paste past posts to the Agent or add them yourself. Start with 3–5 that best show your style; you can share more whenever you like.
+* **The Agent's persona and rules** are in [AGENTS.md](AGENTS.md). How it keeps the dashboard is in [workflows/maintain.md](workflows/maintain.md).
 
 ## Files
 
-* `AGENTS.md`: the AI's persona, how it writes for you, the task index, and how it keeps your files.
+* `AGENTS.md`: the AI's persona, general rules, your standing instructions, the task index, and how it keeps your files.
 * `CLAUDE.md`: points Claude Code to `AGENTS.md`.
-* `context/profile.md`: your background, posting goals, posting angle, and writing style.
+* `context/profile.md`: your background and writing style, plus any goals or recurring views you've shared.
 * `context/work/`: what the Agent knows about your work, organized by project.
 * `inbox/`: what you've told it about your days, one file per day, with `index.md` listing them.
 * `posts/`: your LinkedIn posts, past and new, one file each.
-* `workflows/setup.md`: the setup Q&A.
-* `workflows/daily.md`: what happens when you tell it about your day.
-* `workflows/idea.md`: what happens when you tell it an idea, or ask what to post.
-* `workflows/write.md`: how to write and edit LinkedIn posts.
-* `workflows/maintain.md`: how the Agent keeps the dashboard current, and the format of its data.
+* `workflows/setup.md`: the setup conversation, saving each answer, and safe example cleanup.
+* `workflows/daily.md`: saving recent work and following up naturally.
+* `workflows/idea.md`: shaping ideas and suggesting angles with short outlines.
+* `workflows/write.md`: writing and editing LinkedIn posts.
+* `workflows/maintain.md`: keeping the dashboard current, importing past posts, and the data format.
 * `index.html`: the dashboard.
-* `assets/`: the dashboard's data and banner.
+* `assets/posts.json`: the dashboard's ideas and post list.
+* `assets/setup-examples.json`: the fixed reference for identifying untouched template examples at first setup.
+* `assets/`: also holds the dashboard banner.

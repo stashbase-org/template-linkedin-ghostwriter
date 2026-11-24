@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "description": "Fixed reference for the examples shipped with this template. Use only for conservative first-setup cleanup; never regenerate from a user's workspace. A matching hash identifies an untouched file, not permission to delete related user records.",
+  "files": [
+    {
+      "path": "context/profile.md",
+      "sha256": "d047c58265d1f5450d0e7a37f62cce8188caf4941c522b94bc8211caaa4ae8b4"
+    },
+    {
+      "path": "context/work/open-source.md",
+      "sha256": "67fa6eb4d79efb367b57ecc8b1d7c7f17485eaee5571e44f56ffaa22d3da690f"
+    },
+    {
+      "path": "inbox/2026-11-03.md",
+      "sha256": "dc8aa30afd21a3fe5a5cb695ee94b328720f3b2cbaa9c6b3772fa57499745849"
+    },
+    {
+      "path": "inbox/2026-10-31.md",
+      "sha256": "a24faf04b4fa5a2edeb2e15cba30d2567ae288cac195d011a8796b2d54d6d4a8"
+    },
+    {
+      "path": "inbox/2026-10-28.md",
+      "sha256": "4959df17f881bd09d7d1c861ed7de23d4d0654a70ea6bb3d8772684ba8c4180f"
+    },
+    {
+      "path": "inbox/2026-10-24.md",
+      "sha256": "db08294158cf734b4d705ffee4af545d11ddefa7439ab94030a5662d9577e221"
+    },
+    {
+      "path": "posts/2026-11-04-verifier-that-passed-when-it-should-have-failed.md",
+      "sha256": "caa57dfc6cfdf5e82febdb2b6335a05ba41ec5f40a14459487574bd7b4596659"
+    },
+    {
+      "path": "posts/2026-11-04-the-docs-pr-nobody-asked-for.md",
+      "sha256": "4c7badcb3392868a3e8b45f499931088610e3a9c2dbe0f95ac284f369e7fbe38"
+    },
+    {
+      "path": "posts/2026-11-04-first-month-sending-prs.md",
+      "sha256": "2b9db090a2e645261209b807a6f2209eee162b76aee1d47da0ab50b6353a7c10"
+    },
+    {
+      "path": "posts/2026-11-03-read-the-tests-before-the-readme.md",
+      "sha256": "16a210f09760c5517a69efe1b5c336dd523a74b97b19df900f8efe89c6147946"
+    },
+    {
+      "path": "posts/2026-10-14-ai-assistant-wrote-my-tests-for-a-week.md",
+      "sha256": "27193120d2cf8dba5b3bdf15036a2850d0c8eb75ce64a2f333e5f9df17f5f4cb"
+    },
+    {
+      "path": "posts/2026-09-22-cut-my-side-project-in-half.md",
+      "sha256": "4c2413e4a27cfef170ee147c5d62b5ec9114ad9d5ab3c9c16bf058d17db812b3"
+    },
+    {
+      "path": "posts/2026-09-08-i-finally-learned-the-debugger.md",
+      "sha256": "b437d2c94fa8ea5421e6f61ff1b76a338bc28dc6d9bd561f100ee448ea913817"
+    },
+    {
+      "path": "posts/2026-08-25-the-review-comment-i-still-think-about.md",
+      "sha256": "2db11554c83cc56637d83ffb700fd80177cda23526ac147618cb43b822718379"
+    }
+  ],
+  "inboxIndexLines": [
+    "- [Tuesday, November 3, 2026](2026-11-03.md): Split a PR in two for the data library, and read the command-line tool's tests.",
+    "- [Saturday, October 31, 2026](2026-10-31.md): The verifier fix got merged after a second round of review.",
+    "- [Wednesday, October 28, 2026](2026-10-28.md): Got the healthcare frontend running locally, and wrote the steps into a docs PR.",
+    "- [Saturday, October 24, 2026](2026-10-24.md): First PR to the data library, and found the verifier bug."
+  ],
+  "ideas": [
+    {
+      "date": "2026-11-04",
+      "idea": "Done means something different in someone else's project",
+      "plan": "A series: an intro, three examples, and a wrap-up. Written so far: the intro, the verifier, and the docs PR. The third example isn't picked yet."
+    },
+    {
+      "date": "2026-11-02",
+      "idea": "Reading a stranger's codebase is a skill nobody teaches",
+      "plan": ""
+    },
+    {
+      "date": "2026-10-30",
+      "idea": "Small PRs get merged, big ones get discussed",
+      "plan": "Start from the data library PR I was asked to split in two, and how the smaller half was merged the same afternoon."
+    },
+    {
+      "date": "2026-10-27",
+      "idea": "Why I went wide instead of picking one project",
+      "plan": "Start from the four projects I picked in my first month, each in a different language, with different maintainers."
+    },
+    {
+      "date": "2026-10-20",
+      "idea": "What I'd tell myself before my first open-source PR",
+      "plan": ""
+    }
+  ],
+  "posts": [
+    {
+      "title": "The verifier that passed when it should have failed",
+      "file": "2026-11-04-verifier-that-passed-when-it-should-have-failed.md",
+      "posted": false
+    },
+    {
+      "title": "The docs PR nobody asked for",
+      "file": "2026-11-04-the-docs-pr-nobody-asked-for.md",
+      "posted": false
+    },
+    {
+      "title": "My first month sending PRs into other people's code",
+      "file": "2026-11-04-first-month-sending-prs.md",
+      "posted": true
+    },
+    {
+      "title": "Read the tests before the README",
+      "file": "2026-11-03-read-the-tests-before-the-readme.md",
+      "posted": false
+    },
+    {
+      "title": "I let an AI assistant write my tests for a week",
+      "file": "2026-10-14-ai-assistant-wrote-my-tests-for-a-week.md",
+      "posted": true
+    },
+    {
+      "title": "I cut my side project in half, and people finally used it",
+      "file": "2026-09-22-cut-my-side-project-in-half.md",
+      "posted": true
+    },
+    {
+      "title": "I finally learned to use the debugger",
+      "file": "2026-09-08-i-finally-learned-the-debugger.md",
+      "posted": true
+    },
+    {
+      "title": "The review comment I still think about",
+      "file": "2026-08-25-the-review-comment-i-still-think-about.md",
+      "posted": true
+    }
+  ]
+}
